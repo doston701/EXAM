@@ -2,6 +2,8 @@ const ellist = document.querySelector(".book__list");
 const elHero = document.querySelector(".hero__wrapper");
 const eLMrkList = document.querySelector(".bookmarks__list");
 const elHeaderbtn = document.querySelector(".header__bnt");
+const searchInput = document.querySelector("#search");
+const getResult = document.querySelector(".show__title");
 
 async function response() {
   let data = await fetch(
@@ -35,6 +37,7 @@ async function response() {
         ></a>
       </li>
         `;
+
         ellist.appendChild(createLi);
 
         if (i == 0) {
