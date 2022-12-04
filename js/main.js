@@ -1,6 +1,7 @@
 const ellist = document.querySelector(".book__list");
 const elHero = document.querySelector(".hero__wrapper");
 const eLMrkList = document.querySelector(".bookmarks__list");
+const elHeaderbtn = document.querySelector(".header__bnt");
 
 async function response() {
   let data = await fetch(
@@ -80,3 +81,7 @@ async function response() {
 }
 
 response();
+
+elHeaderbtn.addEventListener("click", (e) => {
+  window.location.href = "login.html";
+});
