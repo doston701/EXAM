@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -26,6 +25,7 @@ img {
 }
 
 .container {
+  max-width: 1240px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -34,6 +34,7 @@ img {
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   background-color: #ffffff;
   margin: 0;
   height: 100vh;

@@ -1,7 +1,34 @@
+@font-face {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/rubik-v21-latin-regular.woff2") format("woff2"), url("../fonts/rubik-v21-latin-regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/rubik-v21-latin-500.woff2") format("woff2"), url("../fonts/rubik-v21-latin-500.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/noto-sans-v27-latin-regular.woff2") format("woff2"), url("../fonts/noto-sans-v27-latin-regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/noto-sans-v27-latin-500.woff2") format("woff2"), url("../fonts/noto-sans-v27-latin-500.woff") format("woff");
+  font-display: swap;
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -28,6 +55,7 @@ img {
 }
 
 .container {
+  max-width: 1240px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -36,6 +64,7 @@ img {
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   background-color: #ffffff;
   margin: 0;
   height: 100vh;
@@ -49,4 +78,435 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.site-header {
+  padding: 16px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__img {
+  width: 226px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__input {
+  position: relative;
+  display: inline-block;
+  width: 670px;
+  padding: 15px;
+  background: #f8fafd;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  outline: none;
+  background-image: url("../../img/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: center;
+  border: none;
+  padding-left: 45px;
+}
+
+.header__input::-webkit-input-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  left: 48px;
+}
+
+.header__input::-moz-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  left: 48px;
+}
+
+.header__input:-ms-input-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  left: 48px;
+}
+
+.header__input::-ms-input-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  left: 48px;
+}
+
+.header__input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  left: 48px;
+}
+
+.header__bnt {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 10px 23px;
+  background: #0d75ff;
+  border-radius: 4px;
+  border: none;
+}
+
+.header-line {
+  margin-top: 11px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.show__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 275px;
+  padding: 11px 0;
+}
+
+.show__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222531;
+}
+
+.show__btn {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: #a6b0c3;
+  border-radius: 4px;
+  padding: 10px 16px;
+  border: none;
+  padding-left: 48px;
+  background-image: url("../../img/order-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 16px;
+  background-position-y: center;
+}
+
+.hero__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.book {
+  background: #e5e5e5;
+  width: 991px;
+}
+
+.book__list {
+  width: 991px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.bookmarks {
+  max-width: 268px;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+.bookmarks__content {
+  margin-bottom: 25px;
+}
+
+.bookmarks__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.bookmarks__text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  color: #000000;
+}
+
+.bookmarks__item {
+  width: 218px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f8fafd;
+  border-radius: 4px;
+  padding: 15px 11px 15px 10px;
+}
+
+.bookmarks__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.bookmarks__text {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.bookmarks__book-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.book__item {
+  width: 282px;
+  padding: 13px 15px 13px 18px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.book__img-wrapper {
+  width: 249px;
+  padding: 18px 28px 18px 20px;
+  background: #f8fafd;
+  border-radius: 5px;
+  margin-bottom: 19px;
+}
+
+.book__img {
+  width: 201px;
+  height: 202px;
+}
+
+.book__item-title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 2px;
+  color: #000000;
+}
+
+.book__item-text {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.book__item-year {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+  margin-bottom: 10px;
+}
+
+.book__btn-bookmark {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 10px 26px;
+  background: #ffd80d;
+  border-radius: 4px;
+  border: none;
+}
+
+.book__btn-info {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0d75ff;
+  padding: 10px 28px;
+  background: rgba(13, 117, 255, 0.05);
+  border-radius: 4px;
+  border: none;
+}
+
+.book__btn-read {
+  width: 246px;
+  padding: 10px 106px;
+  background: #75828a;
+  border-radius: 4px;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.bookmarks__book {
+  border: none;
+  background-color: transparent;
+}
+
+.login {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../img/login-bach-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login__container {
+  max-width: 340px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.login__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login__icon {
+  width: 226px;
+  height: 44px;
+  margin-bottom: 50px;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__input-email {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 13px 165px 12px 51px;
+  margin-bottom: 20px;
+  background-image: url("../../img/login-username-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: center;
+  color: #ffffff;
+}
+
+.login__input-password {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 13px 165px 12px 51px;
+  margin-bottom: 20px;
+  background-image: url("../../img/login-pasword-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: center;
+  color: #ffffff;
+}
+
+.login__btn {
+  width: 380px;
+  padding: 13px 123px 12px 123px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0d75ff;
 }/*# sourceMappingURL=main.css.map */

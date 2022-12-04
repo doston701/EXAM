@@ -1,0 +1,72 @@
+.login {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../img/login-bach-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login__container {
+  max-width: 340px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.login__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login__icon {
+  width: 226px;
+  height: 44px;
+  margin-bottom: 50px;
+}
+
+.login__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__input-email {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 13px 165px 12px 51px;
+  margin-bottom: 20px;
+  background-image: url("../../img/login-username-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: center;
+  color: #ffffff;
+}
+
+.login__input-password {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 13px 165px 12px 51px;
+  margin-bottom: 20px;
+  background-image: url("../../img/login-pasword-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: center;
+  color: #ffffff;
+}
+
+.login__btn {
+  width: 380px;
+  padding: 13px 123px 12px 123px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0d75ff;
+}

@@ -1,0 +1,176 @@
+.hero__wrapper {
+  display: flex;
+}
+
+.book {
+  background: #e5e5e5;
+  width: 991px;
+}
+
+.book__list {
+  width: 991px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.bookmarks {
+  max-width: 268px;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+.bookmarks__content {
+  margin-bottom: 25px;
+}
+
+.bookmarks__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.bookmarks__text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  color: #000000;
+}
+
+.bookmarks__item {
+  width: 218px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafd;
+  border-radius: 4px;
+  padding: 15px 11px 15px 10px;
+}
+
+.bookmarks__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.bookmarks__text {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.bookmarks__book-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.book__item {
+  width: 282px;
+  padding: 13px 15px 13px 18px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.book__img-wrapper {
+  width: 249px;
+  padding: 18px 28px 18px 20px;
+  background: #f8fafd;
+  border-radius: 5px;
+  margin-bottom: 19px;
+}
+
+.book__img {
+  width: 201px;
+  height: 202px;
+}
+
+.book__item-title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 2px;
+  color: #000000;
+}
+
+.book__item-text {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.book__item-year {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+  margin-bottom: 10px;
+}
+
+.book__btn-bookmark {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 10px 26px;
+  background: #ffd80d;
+  border-radius: 4px;
+  border: none;
+}
+
+.book__btn-info {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0d75ff;
+  padding: 10px 28px;
+  background: rgba(13, 117, 255, 0.05);
+  border-radius: 4px;
+  border: none;
+}
+
+.book__btn-read {
+  width: 246px;
+  padding: 10px 106px;
+  background: #75828a;
+  border-radius: 4px;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.bookmarks__book {
+  border: none;
+  background-color: transparent;
+}
